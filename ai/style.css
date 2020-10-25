@@ -1,3 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Rubik', sans-serif;
 }
+
+a {
+  color: darkcyan;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header {
+  margin: 1em 0 5em 0;
+}
+
+nav {
+  margin: 2em 0 1em 1em;
+}
+nav li {
+  margin: .5em;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+main {
+  margin: 1em 0;
+}
+
+.counters {
+  counter-reset: counter-name;
+}
+
+section {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+section h3 {
+  font-weight: 400;
+}
+
+section h3::before {
+  display: inline;
+  color: orangered;
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  margin-right: 1em;
+}
+
