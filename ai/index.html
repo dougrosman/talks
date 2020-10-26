@@ -28,7 +28,19 @@
     <main class="counters">
       <section id="doug-rosman">
         <h3>Doug Rosman</h3>
-        <a href="https://dougrosman.com">dougrosman.com</a>
+        <p><a href="https://dougrosman.com">dougrosman.com</a></p>
+        <h4 class="work-title">self-contained</h4>
+        <p>
+          <a href="images/self-contained01.jpg" target="_blank"><img src="images/self-contained01.jpg" alt="self-contained 01"></a>
+          <a href="images/self-contained02.jpg" target="_blank"><img src="images/self-contained02.jpg" alt="self-contained 02"></a>
+          <a href="images/self-contained03.jpg" target="_blank"><img src="images/self-contained03.jpg" alt="self-contained 03"></a>
+        </p>
+        <p><iframe src="https://player.vimeo.com/video/331575304?color=ffffff&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+        <p><iframe src="https://player.vimeo.com/video/341014454?color=ffffff&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+        <p><iframe src="https://player.vimeo.com/video/341014803?color=ffffff&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+        <h4 class="work-title">Patriot Coin (work in progress)</h4>
+        <p><img src="images/patriot_coin.jpg" alt="Patriot Coin"></p>
+        <p><a href="https://dougrosman.github.io/PatriotCoin/" target="_blank">Link to PatriotCoin (you need a MetaMask account to and ETH on the Rinkeby Testnet to experience this work)</a></p>
       </section>
       <section id="ai">
         <h3>What is Artificial Intelligence?</h3>
@@ -47,16 +59,33 @@
           <video src="videos/batman-projection.mp4" controls muted></video>
           <img src="images/batman.png" alt="">
         </div>
+        <div class="side-by-side">
+          <video src="videos/ken-projection.mp4" controls muted></video>
+          <img src="images/ken.png" alt="">
+        </div>
       </section>
       <section id="additional-resources">
         <h3>Additional Resources</h3>
       </section>
       <section id="teachable-machine">
         <h3>Teachable Machine Demo</h3>
-        <p>ok</p>
-        <pre>
-<code class="language-javascript">let cool = 0;</code>
-        </pre>
+        <p class="intro">This demo should you get you up and running with an interactive p5.js sketch that uses a Machine Learning-based image recognition model that we'll train from scratch* using Google's Teachable Machine!</p>
+        <p class="ps">If you're creating a sketch outside of the p5.js web editor, you'll need to download the <a href="libs/p5.min.js" download>p5.js</a> and <a href="libs/ml5.min.js" download>ml5.js</a> libraries and put them in a folder next to your sketch.js file. The template p5.js code provided by Teachable Machine requires an older version of p5.js and ml5.js. The links here will download those older versions.</p>
+        <h4 class="demo-section__title">Part 1: Training your model in Teachable Machine</h4>
+        <ol class="demo-section__content">
+          <li>Go to <a href="https://teachablemachine.withgoogle.com/" target="_blank">teachablemachine.withgoogle.com</a> and click 'Get Started'</li>
+          <li>Select 'Image Project'</li>
+          <li>Train your image model! Create and name as many classes as you'll need for your model.</li>
+          <li>Record or upload images to each class. There's a whole lot to be said about what makes a "good" data set. But here are some general tips:
+            <ol>
+              <li><b>Quantity > Quality:</b> In general, 500 "okay" iamges will be better than 50 "good" images. There's no right number for how many images you should have per class, but you should have at least 100 images per class.</li>
+              <li><b>Variety is the spice of a well-composed data set:</b> Make sure to capture a wide variety of images for each class by altering your capture conditions. Change your lighting, move the object toward and away from the camera, position the object at different angles, record different versions of the same object (for example, if you're teaching a machine to recognize a dog, you should probably include multiple dog breeds in your data set).</li>
+              <li><b>Be aware of your context:</b> Computers have a mind of their own, and will learn things you didn't mean for them to learn. For example, if you're trying to teach the machine how to recognize your drawings, keep in mind that it's paying just as much attention to the paper the drawing is on as much as the drawing itself.</li>
+              <li><b>(MOST IMPORTANT) Be aware of bias!!:</b> Continuing the point above, <em>computers will learn things you didn't mean for them to learn. this can have harmful consequences.</em>. For example, if you're training your model to recognize a human face, will it perform equally for people with different skin tones? If your data set is composed of images of only one kind of person, then it won't </li>
+            </ol>
+          </li>
+        </ol>
+        <pre><code class="language-javascript">let cool = 0;</code></pre>
       </section>
     </main>
     

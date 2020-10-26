@@ -8,16 +8,23 @@ html {
   font-family: sans-serif;
 }
 
-a {
-  color: darkcyan;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-video {
-  max-width: 256px;
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: darkcyan;
+}
+
+a:hover {
+  background: orangered;
+  color: white;
 }
 
 .wrapper {
@@ -52,8 +59,8 @@ main {
 }
 
 section {
-  border: 2px solid black;
-  border-radius: 5px;
+  /* border: 2px solid black;
+  border-radius: 5px; */
   padding: 1em;
   margin: 1em 0;
   max-width: 95%;
@@ -62,6 +69,13 @@ section {
 section h3 {
   font-weight: 400;
   margin-bottom: 1em;
+  background: black;
+  color: white;
+  padding: .5em;
+}
+
+section img {
+  max-width: 100%;
 }
 
 section h3::before {
@@ -97,6 +111,10 @@ pre::after {
   flex-wrap: wrap;
 }
 
+.side-by-side > * {
+  max-width: 50%;
+}
+
 pre:hover::after {
   cursor: pointer;
 }
@@ -104,4 +122,46 @@ pre:hover::after {
 pre:active::after {
   color: white;
   background: black;
+}
+
+.work-title {
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: .5em;
+}
+
+.ps {
+  font-size: .8rem;
+  background: lightgray;
+  padding: 1.25em;
+  border-radius: .5em;
+}
+
+.ps::before {
+  content: 'Note: ';
+  font-weight: 700;
+  font-style: italic;
+}
+
+.intro {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.demo-section__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.demo-section__content {
+  margin-left: 1em;
+}
+
+.demo-section__content li {
+  margin: 1em 0;
+}
+
+.demo-section__content > li > ol {
+  margin-left: 1em;
 }
