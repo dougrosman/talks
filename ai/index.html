@@ -126,6 +126,7 @@ let video;
 let flippedVideo;
 // To store the classification
 let label = "";
+let confidence = 0; // Make sure to add this variable!
 
 // Load the model first
 function preload() {
@@ -172,6 +173,9 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
+  confidence = results[0].confidence;
+  // make sure you added 'let confidence = 0' to the top of your code!
+  
   // Classifiy again!
   classifyVideo();
 }</code></pre>
@@ -179,7 +183,7 @@ function gotResult(error, results) {
   <li><strong>Label:</strong> The label is the name of your class. results[0].label will return the label the classifier feels most confident about.</li>
   <li><strong>Confidence: </strong> The confidence is how sure the classifier is about what it sees. This number ranges from 0-1, where 1 means 100% confidence in identifying the object.</li>
 </ol></li>
-<li>Let's take a look at the 'gotResult' function. This is where we can work with the data being returned by the classifier to be used to affect the contents of our sketch. We can change some of the code to access the confidence and labels that we want.</li>
+<li>Let's take a look at the 'gotResult' function. This is where we can work with the data being returned by the classifier to control elements of our sketch. We can change some of the code to access the confidence and labels that we want.</li>
 <pre><code class="language-javascript">// When we get a result
 function gotResult(error, results) {
   // If there is an error
@@ -190,10 +194,33 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
+  confidence = results[0].confidence;
   // Classifiy again!
   classifyVideo();
 }
 </code></pre>
+<li>If you wanted to control certain actions with different labels and confidence values, you can use if-statements:</li>
+<pre><code class="language-javascript">  label = results[0].label;
+  confidence = results[0].confidence;
+
+  if (label == "Move Up") {
+    // move circle Up (decrease Y value)
+  } else if (label == "Move Right") {
+    // move circle Right (increase X value)
+  } else if (label == "Move Down") {
+    // move circle Down (increase Y value)
+  } else if (label == "Move Left") {
+    // move circle Left (decrease X value)
+  } else {
+    // do nothing
+  }
+  // Classifiy again!
+  classifyVideo();</code></pre>
+  <li>You could also do something like use the confidence value to determine the size of the circle you're using to draw:</li>
+  <pre><code class="language-javascript">  confidence = results[0].confidence;
+  radius = map(confidence, 0, 1, 1, 100);
+  /* if you want to use radius, you would first have
+   to declare it at the top of your code */</code></pre>
 </ol>
       </section>
     </main>
