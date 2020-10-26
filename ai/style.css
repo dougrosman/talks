@@ -6,6 +6,7 @@
 
 html {
   font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -16,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 1em;
+  line-height: 1.25em;
 }
 
 a {
@@ -25,6 +27,10 @@ a {
 a:hover {
   background: orangered;
   color: white;
+}
+
+li {
+  line-height: 1.25em;
 }
 
 .wrapper {

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="libs/prism.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="libs/jquery-3.5.1.min.js"></script>
@@ -81,9 +82,9 @@
               <li><b>Quantity > Quality:</b> In general, 500 "okay" iamges will be better than 50 "good" images. There's no right number for how many images you should have per class, but you should have at least 100 images per class.</li>
               <li><b>Variety is the spice of a well-composed data set:</b> Make sure to capture a wide variety of images for each class by altering your capture conditions. Change your lighting, move the object toward and away from the camera, position the object at different angles, record different versions of the same object (for example, if you're teaching a machine to recognize a dog, you should probably include multiple dog breeds in your data set).</li>
               <li><b>Be aware of your context:</b> Computers have a mind of their own, and will learn things you didn't mean for them to learn. For example, if you're trying to teach the machine how to recognize your drawings, keep in mind that it's paying just as much attention to the paper the drawing is on as much as the drawing itself.</li>
-              <li><b>(MOST IMPORTANT) Be aware of bias!!:</b> Continuing the point above, <em>computers will learn things you didn't mean for them to learn. this can have harmful consequences.</em>. For example, if you're training your model to recognize a human face, will it perform equally for people with different skin tones? If your data set is composed of images of only one kind of person, then it won't </li>
-            </ol>
-          </li>
+              <li><b>(MOST IMPORTANT) Be aware of bias!!:</b> Continuing the point above, <em>computers will learn things you didn't mean for them to learn. This can have harmful consequences</em>. For example, if you're training your model to recognize a human face, will it perform equally for people with different skin tones? If your data set is composed of images of only one kind of person, then it will only perform with the most accuracy for that type of person. We usually don't have access to every type of person (or object, or whatever it is we're filling our data set with), so it's important to acknowledge that our image models are imperfect, and might not perform well for everyone. It's okay when we're just experimenting with artistic sketches in the comfort of our homes or classrooms, but these issues become much more important when we put these tools out into the world, where we can't be sure who will be interacting with them.</li>
+            </ol></li>
+            <p class="ps">Bias in AI is one of the most important issues facing the proliferation of this technology. There is no such thing as a "neutral" AI, and the issue of bias in machine learning is something that can never be "solved" (though that doesn't mean we shouldn't do everything we can to understand it and work to remove it). Many companies that use machine learning in their product stack have (or <a href="https://www.theverge.com/2019/4/4/18296113/google-ai-ethics-board-ends-controversy-kay-coles-james-heritage-foundation" target="_blank">weakly gestured toward having...</a>) something like an AI ethics division, whose responsibility it is to make sure the AI tools they put out into the world are as ethical and unbiased as they possibly can be (within reason for them to remain profitable, anyway...spending time).</p>
         </ol>
         <pre><code class="language-javascript">let cool = 0;</code></pre>
       </section>

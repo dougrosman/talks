@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  ethereum.autoRefreshOnNetworkChange = false;
+  
   $('pre').on('click', copyToClipboard);
 
   function copyToClipboard() {
@@ -10,3 +10,4 @@ $(document).ready(function(){
     temp.remove();
   }
 })
+ethereum.autoRefreshOnNetworkChange = false;
