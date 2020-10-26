@@ -8,9 +8,8 @@ html {
   font-family: sans-serif;
   font-family: 'Work Sans', sans-serif;
   font-weight: 350;
+  font-size: 20px;
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
@@ -32,6 +31,15 @@ a:hover {
 
 li {
   line-height: 1.25em;
+}
+
+iframe {
+  max-width: 100%;
+  background: #000;
+}
+
+video {
+  max-width: 100%;
 }
 
 .wrapper {
@@ -97,29 +105,21 @@ pre {
   font-weight: 500;
   max-width: 80ch;
   position: relative;
-  overflow: unset !important;
   color: black !important;
+  word-break: break-all !important;
 }
 pre::after {
   content: '[copy]';
   position: absolute;
-  right: -50px;
-  top: 0px;
+  right: .3em;
+  top: .3em;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: .5em;
   font-family: sans-serif;
   font-weight: 100;
-  font-size: .8rem;
+  font-size: .7rem;
   padding: .3em;
-}
-
-.side-by-side {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.side-by-side > * {
-  max-width: 50%;
+  background: white;
 }
 
 pre:hover::after {
@@ -128,7 +128,21 @@ pre:hover::after {
 
 pre:active::after {
   color: white;
-  background: black;
+  background: gray;
+}
+
+code {
+  max-width: 80ch;
+  word-break: break-all !important;
+  font-size: .8rem !important;
+}
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side-by-side > * {
+  max-width: 50%;
 }
 
 .work-title {
