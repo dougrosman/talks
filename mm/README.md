@@ -43,4 +43,4 @@ https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recogniti
 
 https://clearview.ai/
 https://ieeexplore.ieee.org/document/5206848?arnumber=5206848
-
+https://www.theverge.com/tldr/2020/11/3/21547392/ai-camera-operator-football-bald-head-soccer-mistakes
