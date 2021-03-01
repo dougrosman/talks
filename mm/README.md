@@ -1,6 +1,8 @@
 Clips from "Coded Bias"
 49:00
 54:00: "Risk assessment to for pennsylvania judges" (recidivism risk algorithms, judges use these at the time of sentencing)
+
+1:15:00 (court hearing, AOC's summary)
 [thispersondoesnotexist.com](https://thispersondoesnotexist.com/)
 [WHITE COLLAR CRIME RISK ZONES](https://whitecollar.thenewinquiry.com/)
 
